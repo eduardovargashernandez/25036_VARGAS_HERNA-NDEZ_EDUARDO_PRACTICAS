@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video</title>
+</head>
+<link href="../css/style_one.css" rel="stylesheet" type="text/css">
+	
+	<style type="text/css">
+		header {
+    color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    height: 100px;
+    background-color: #F5F381;
+    text-align: center;
+    font-size: 90px;
+}
+section{
+			
+			width: 760px;
+			background-color: black;
+			margin: 30px auto;
+			color: white;
+			padding: 50px;
+			font-family: Helvetica;
+			font-size: 30px;
+		}
+
+h1, h2 {
+    font-family: helvetica;
+    font-style: normal;
+    color: #FFFFFF;
+	font-size: 80px;
+}
+p {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    background-color: none;
+    color: #FFFFFF;
+	font-size: 50px;
+}
+footer {
+    background-color: #E7ED36;
+    font-family: helvetica;
+	color: #black;
+	font-size: 60px;
+}
+video {
+    width:50%;
+}
+main {
+    background-color: grey;
+	padding: 20px;
+}
+img {
+    width: 500px;
+}
+a:visited{
+    color:#ED756E;
+}
+a:link{
+    color:#AFAFF3;
+}
+nav, ul, li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 80px;
+	color: magenta;
+	background-color: aquamarine;
+	text-align: left;
+	font-size: 70px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+#pie_pag {
+}
+#pie_pag {
+}
+#imagen_five {
+    float: right;
+}
+#imagen_six {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+	}
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=range]{
+    width:50%;
+	padding: 10px;
+	margin: 5px;
+	box-sizing: border-box;
+	color: magenta;
+	background-color: yellow;
+	border-radius: 5px;	
+	font-size: 30px;
+}
+
+input[type=text]:focus{
+    border: #5ED7AD;
+	}
+input[type=email]:focus{
+    border: #5ED7AD;
+	}
+
+textarea{
+    width: 80px;
+	height: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: gray;
+	resixe: none;
+	
+	}
+input[type=submit]{
+    width:20%;
+	padding: 10px;
+	margin: 5px;
+	color: black;
+	background-color: aquamarine;
+	border-radius: 5px;	
+	font-size: 30px;
+}
+	
+.desenfoque {
+    filter: blur(4px);
+}
+.brillo {
+    filter: brightness(50%);
+}
+.constraste {
+    filter: contrast(50%);
+}
+.grises {
+    filter: grayscale(100%);
+}
+.negativo {
+    filter: invert(100%);
+}
+.opacidad {
+    filter: opacity(50%);
+}
+.saturacion {
+    filter: saturate(50%);
+}
+.sepia {
+    filter: sepia(100%);
+}
+.borde_redondeado_2 {
+    border-radius: 60%;
+    border: 20px solid #6355B0;
+}
+.redondeo_1 {
+    border-radius: 55px;
+    border: 20px solid #28B71B;
+}
+.mixto {
+    border-radius: 40% / 40% 40% 40% 90px;
+    border: 20px solid #CDC119;
+}
+.opacidad_2 {
+    opacity: 0.75;
+}
+.reflexion {
+	
+    height: auto;
+    transform: scaleX(-1);
+}
+.rotacion:hover {
+	
+    height: auto;
+    /*transform: rotate(40deg);
+}
+
+		</style>
+<body>
+	<header>
+		<h1>Video HTML 5</h1>
+	</header>
+	<nav>
+	<ol>
+<li><a href="mi_primera_pagina.html">Mi Primera Pagina</a></li>
+<li><a href="listas.html">Listas</a></li>
+<li><a href="tablas.html">Tablas</a></li>
+<li><a href="enlaces.html">Enlaces</a></li>
+<li><a href="imagenes.html">Imagenes</a></li>
+<li><a href="audio.html">Audio</a></li>
+<li><a href="video.html">Video</a></li>
+</ol>
+	</nav>
+	
+	<main>
+		<section>
+			<h2>Insercion de Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+			<video controls class="video">
+			<source src= "../video/Vid_1.mp4" type="video/mp4">
+			<source src= "" type="video/webM">
+				<source src= "" type="video/ogg">
+			</video>
+		</section>
+		
+		<section>
+			<h2>Insercion de Video autoplay</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+			<video controls autoplay="autoplay" class="video">
+			<source src= "../video/Vid_1.mp4" type="video/mp4">
+			<source src= "" type="video/webM">
+				<source src= "" type="video/ogg">
+			</video>
+			
+		</section>
+		
+		<section>
+			<h2>Insercion de video mute y loop</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+			<video controls muted="muted" loop="loop" class="video">
+			<source src= "../video/Vid_1.mp4" type="video/mp4">
+			<source src= "" type="video/webM">
+				<source src= "" type="video/ogg">
+			</video>
+		</section>
+		
+		<section>
+			<h2>Insercion de video con poster</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+		<video controls poster= "../img/fondo_web.jpg" preload="auto" class="video">
+			<source src= "../video/Vid_1.mp4" type="video/mp4">
+			<source src= "" type="video/webM">
+				<source src= "" type="video/ogg">
+			</video>
+		</section>
+		
+		<section>
+			<h2>Insercion de video Repositorio</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/osePKL39EBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+		
+		<section>
+			<h2>Insercion de video Repositorio</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo dicta, iure necessitatibus! Beatae voluptatum ipsam, aliquid quibusdam ipsum consequuntur.</p>
+			<iframe src="https://player.vimeo.com/video/302154312?h=ad06a49e3c&color=969696" width="640" height="268" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/302154312">&ldquo;Way of Giants&rdquo; - &ldquo;Caminho dos Gigantes&rdquo;</a> from <a href="https://vimeo.com/sinlogo">SINLOGO Animation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</section>
+	</main>
+	<footer>
+		<h5>Elaborado por: Eduardo Vargas Hernández</h5>
+	</footer>
+	
+<body>
+</body>
+</html>

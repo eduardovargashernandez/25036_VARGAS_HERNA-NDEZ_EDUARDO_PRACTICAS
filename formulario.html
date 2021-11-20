@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formularios</title>
+</head>
+<link href="../css/style_one.css" rel="stylesheet" type="text/css">
+	
+	<style type="text/css">
+		header {
+    color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    height: 100px;
+    background-color: #F5F381;
+    text-align: center;
+    font-size: 90px;
+}
+section{
+			
+			width: 760px;
+			background-color: black;
+			margin: 30px auto;
+			color: white;
+			padding: 50px;
+			font-family: Helvetica;
+			font-size: 30px;
+		}
+
+h1, h2 {
+    font-family: helvetica;
+    font-style: normal;
+    color: #FFFFFF;
+	font-size: 80px;
+}
+p {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    background-color: none;
+    color: #FFFFFF;
+	font-size: 50px;
+}
+footer {
+    background-color: #E7ED36;
+    font-family: helvetica;
+	color: #black;
+	font-size: 60px;
+}
+video {
+    width:50%;
+}
+main {
+    background-color: grey;
+	padding: 20px;
+}
+img {
+    width: 500px;
+}
+a:visited{
+    color:#ED756E;
+}
+a:link{
+    color:#AFAFF3;
+}
+nav, ul, li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 80px;
+	color: magenta;
+	background-color: aquamarine;
+	text-align: left;
+	font-size: 70px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+#pie_pag {
+}
+#pie_pag {
+}
+#imagen_five {
+    float: right;
+}
+#imagen_six {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+	}
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=range]{
+    width:50%;
+	padding: 10px;
+	margin: 5px;
+	box-sizing: border-box;
+	color: magenta;
+	background-color: yellow;
+	border-radius: 5px;	
+	font-size: 30px;
+}
+
+input[type=text]:focus{
+    border: #5ED7AD;
+	}
+input[type=email]:focus{
+    border: #5ED7AD;
+	}
+
+textarea{
+    width: 80px;
+	height: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: gray;
+	resixe: none;
+	
+	}
+input[type=submit]{
+    width:20%;
+	padding: 10px;
+	margin: 5px;
+	color: black;
+	background-color: aquamarine;
+	border-radius: 5px;	
+	font-size: 30px;
+}
+	
+.desenfoque {
+    filter: blur(4px);
+}
+.brillo {
+    filter: brightness(50%);
+}
+.constraste {
+    filter: contrast(50%);
+}
+.grises {
+    filter: grayscale(100%);
+}
+.negativo {
+    filter: invert(100%);
+}
+.opacidad {
+    filter: opacity(50%);
+}
+.saturacion {
+    filter: saturate(50%);
+}
+.sepia {
+    filter: sepia(100%);
+}
+.borde_redondeado_2 {
+    border-radius: 60%;
+    border: 20px solid #6355B0;
+}
+.redondeo_1 {
+    border-radius: 55px;
+    border: 20px solid #28B71B;
+}
+.mixto {
+    border-radius: 40% / 40% 40% 40% 90px;
+    border: 20px solid #CDC119;
+}
+.opacidad_2 {
+    opacity: 0.75;
+}
+.reflexion {
+	
+    height: auto;
+    transform: scaleX(-1);
+}
+.rotacion:hover {
+	
+    height: auto;
+    /*transform: rotate(40deg);
+}
+
+		</style>
+<body>
+	<header>
+		<h1>Formularios en HTML</h1>
+	</header>
+	<nav>
+	<ol>
+<li><a href="mi_primera_pagina.html">Mi Primera Pagina</a></li>
+<li><a href="listas.html">Listas</a></li>
+<li><a href="tablas.html">Tablas</a></li>
+<li><a href="enlaces.html">Enlaces</a></li>
+<li><a href="imagenes.html">Imagenes</a></li>
+<li><a href="audio.html">Audio</a></li>
+<li><a href="animacion.html">Animación</a></li>
+<li><a href="formulario.html">Formulario</a></li>
+<li><a href="animacion.html">Animación</a></li>
+<li><a href="Flexbox.html">Flexbox</a></li>
+<li><a href="Media_.html">Media Queries</a></li>
+<li><a href="video.html">Video</a></li>
+</ol>
+	</nav>
+	
+	<main>
+		<section>
+			<h2>Formulario Básico</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel.</p>
+			
+			<form action="gracias.html" method="get" target="new" autocomplete="off">
+				<label>Nombre:</label>
+				<input type="text"><br><br>
+				<label>Apellido:</label>
+				<input type="text"><br><br>
+					<input type="submit" value="Enviar"></form>
+		</section>
+		
+		<section>
+			<h2>Formulario con lista desplegable</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel.</p>
+			<form action="gracias.html" method="get" target="new" autocomplete="off">
+				<label for="nombre" id="nombre">Nombre</label>
+				<input type="text"><br><br><br>
+				<label for="pais">País:</label>
+				<select id="pais" name="pais">
+				<option value="mx">México</option>
+				<option value="es">España</option>
+				<option value="it">Italia</option>
+				<option value="co">Colombia</option>
+				<option value="ar">Argentina</option>
+				</select><br><br><br>
+				<label for="nombre" id="visita">¿Qué países haz visitado?</label>
+				<select id="pais" name="pais" size="5" multiple>
+				<option value="mx">México</option>
+				<option value="es">España</option>
+				<option value="it">Italia</option>
+				<option value="co">Colombia</option>
+				<option value="ar">Argentina</option>
+				</select><br><br><br>
+				<input type="submit" value="Enviar">
+				</form>
+		</section>
+		
+		<section>
+			<h2>Formulario Correo</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel.</p>
+			<form action="gracias.html" method="get" target="new" autocomplete="off">
+				<table width="50%" border="0">
+  <tbody>
+    <tr>
+      <td><label>Nombre:</label></td>
+      <td><input type="text"></td>
+    </tr>
+	  <td><label>Correo electronico:</label></td>
+      <td><input type="email" id="correo" name="correo"></td>
+    </tr>
+    <tr>
+      <td><label for="mensaje">Mensaje</label></td>
+      <td><textarea name=mensaje>Escribe tu mensaje</textarea></td> 
+    </tr>
+	
+  </tbody>
+</table>
+		<input type="submit" value="Enviar"></form>
+		</section>
+		
+		<section>
+			<h2>Formulario utilizando varios tipos de inputs</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel.</p>
+			<form action="gracias.html" method="get" target="new" autocomplete="off">
+				<label for="name">Nombre:</label>
+				<input type="text" id="nombre" name="nombre"><br><br><br>
+				<label for="nacimiento">Fecha de nacimiento:</label>
+				<input type="date" id="nacimiento" name="nacimiento"><br><br><br>
+				<label for="genero">Genero:</label>
+				<input type="radio" id="genero" name="genero" value="femenino"><label>Femenino</label>
+				<input type="radio" id="genero" name="genero" value="masculino"><label>Masculino</label><br><br><br>
+				<label for="musica">Elige de la lista los generos que mas te gusten</label><br><br><br>
+				<input type="checkbox" id="musica" name="musica" value="rock"><label>Rock</label>
+				<input type="checkbox" id="musica" name="musica" value="jazz"><label>Jazz</label>
+				<input type="checkbox" id="musica" name="musica" value="alternativa"><label>Alternativa</label>
+				<input type="checkbox" id="musica" name="musica" value="pop"><label>Pop</label>
+				<input type="checkbox" id="musica" name="musica" value="blues"><label>Blues</label><br><br><br>
+			
+				<input type="submit" value="Enviar"></form>
+			
+		</section>
+
+
+
+<section>
+			<h2>Ejercicios</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel.</p>
+			<form action="gracias.html" method="get" target="new" autocomplete="off">
+				
+				<label for="contrasena">1.- Contraseña:</label>
+				<input id="contrasena" name="contrasena" type="password"><br><br><br>
+				<label for="celular">2.- Telefono Celular</label>
+				<input id="cel" name="cel" type="tel"><br><br><br>
+				<label for="web">3.- ¿Que tan satisfactoria es esta web?</label>
+				<label>0</label><input id="rang" name="rang" type="range"><label>100</label><br><br><br>
+				<label for="hora">4.- ¿A que hora navega en la web?</label>
+				<input id="time" name="time" type="time"><br><br><br>
+				<label>5.- Seleccione su color favorito</label>
+				<input id="colores" name="colores" type="color"><br><br><br>
+				<input type="submit" value="Enviar"></form>
+			
+		</section>
+	</main>
+	<footer>
+		<h5>Elaborado por: Eduardo Vargas Hernández</h5>
+	</footer>
+</body>
+</html>
